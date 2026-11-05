@@ -56,6 +56,26 @@ npx expo start
 
 The app finds the API on the same host that serves the JS bundle (port 4000). To point it elsewhere, set `EXPO_PUBLIC_API_URL`. To use a real PostgreSQL instead of PGlite, set `DATABASE_URL=postgres://…` for the backend.
 
+### Android APK (demo build)
+
+Install `pricing-feeds-demo.apk` (from the repository's GitHub release, or build it yourself, below) with `adb install pricing-feeds-demo.apk` or by opening it on the device. On the sign-in screen, tap **Server → Change** to point the app at your API:
+
+- Android emulator: `http://10.0.2.2:4000` (the default)
+- Phone on the same Wi-Fi: `http://<your computer's IP>:4000`
+
+To build the APK locally (JDK 17 + Android SDK, no Expo account):
+
+```bash
+cd mobile
+npx expo prebuild --platform android
+cd android
+./gradlew assembleRelease
+```
+
+The output is `mobile/android/app/build/outputs/apk/release/app-release.apk`. With an Expo account, `npx eas-cli build -p android --profile preview` builds the same APK in the cloud (see `mobile/eas.json`).
+
+The demo APK is signed with the debug keystore and allows plain HTTP so it can reach a local API. Store builds go through EAS with a managed keystore and HTTPS only.
+
 ### Demo script
 
 1. Sign in as **Amelia Clarke** (Store Manager, London). Search shows only London Oxford Street prices.

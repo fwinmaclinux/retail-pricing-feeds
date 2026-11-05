@@ -39,4 +39,5 @@
 | Aurora PostgreSQL (partitioned) | PGlite (PostgreSQL in WASM), or real PostgreSQL via `DATABASE_URL` | Same SQL; partitioning described in the migration header. |
 | Push notifications | Live polling of feed status while the screen is open | Push needs APNs/FCM credentials. |
 | COPY + MERGE bulk load | Batched `INSERT … ON CONFLICT` with audit in one statement per batch | Same semantics; simpler at demo volumes. |
+| Store-signed builds via EAS (managed keystore), HTTPS only | Sideloadable demo APK signed with the debug keystore; cleartext HTTP allowed and a configurable server URL on the sign-in screen | Lets reviewers run the app against a local API without an app store. |
 | Background/resumable native upload | `XMLHttpRequest` PUT with progress and cancel | Runs in Expo Go without a custom dev build. |

@@ -3,6 +3,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import { configureApiAuth } from '@/api/client';
 import { authApi } from '@/api/endpoints';
 import type { User } from '@/api/types';
+import { loadApiBaseUrlOverride } from '@/config';
 import { tokenStorage, type StoredSession } from './tokenStorage';
 
 interface SessionContextValue {
@@ -34,8 +35,9 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   }, [signOut]);
 
   useEffect(() => {
-    tokenStorage
-      .load()
+    loadApiBaseUrlOverride()
+      .catch(() => {})
+      .then(() => tokenStorage.load())
       .then((stored) => {
         if (stored) {
           tokenRef.current = stored.accessToken;
