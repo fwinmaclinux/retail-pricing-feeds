@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="860" viewBox="0 0 1420 860">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475467"/></marker>
+  <marker id="arrowStart" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475467"/></marker>
+</defs>
+<rect width="1420" height="860" fill="#FFFFFF"/>
+<text x="40" y="48" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#101828">Mobile app architecture</text>
+<text x="40" y="74" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#475467">React Native (Expo SDK 58, New Architecture, Hermes): layered, feature-oriented</text>
+<rect x="40" y="100" width="1040" height="150" rx="12" fill="#F2F6FC" stroke="#9DB7E6"/>
+<text x="58" y="126" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0F5BD8">Screens · Expo Router (file-based, typed routes, auth-guarded stacks)</text>
+<rect x="58" y="140" width="189.6" height="96" rx="10" fill="#0F5BD8" stroke="#0F5BD8" stroke-width="0"/>
+<text x="152.8" y="164.7375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Sign-in</text>
+<text x="152.8" y="180.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[OIDC / demo personas]</text>
+<text x="152.8" y="205.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Session restore from</text>
+<text x="152.8" y="222.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">secure store</text>
+<rect x="261.6" y="140" width="189.6" height="96" rx="10" fill="#0F5BD8" stroke="#0F5BD8" stroke-width="0"/>
+<text x="356.40000000000003" y="164.7375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Prices</text>
+<text x="356.40000000000003" y="180.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[Search &amp; filters]</text>
+<text x="356.40000000000003" y="205.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Debounced query, filter</text>
+<text x="356.40000000000003" y="222.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">sheet, infinite list</text>
+<rect x="465.2" y="140" width="189.6" height="96" rx="10" fill="#0F5BD8" stroke="#0F5BD8" stroke-width="0"/>
+<text x="560" y="164.7375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Price record</text>
+<text x="560" y="180.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[Detail · edit · history]</text>
+<text x="560" y="205.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">If-Match save, conflict</text>
+<text x="560" y="222.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">UI, audit trail</text>
+<rect x="668.8" y="140" width="189.6" height="96" rx="10" fill="#0F5BD8" stroke="#0F5BD8" stroke-width="0"/>
+<text x="763.5999999999999" y="164.7375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Upload</text>
+<text x="763.5999999999999" y="180.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[Pick &amp; pre-check CSV]</text>
+<text x="763.5999999999999" y="205.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Preview, issues,</text>
+<text x="763.5999999999999" y="222.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">progress, cancel</text>
+<rect x="872.4" y="140" width="189.6" height="96" rx="10" fill="#0F5BD8" stroke="#0F5BD8" stroke-width="0"/>
+<text x="967.1999999999999" y="164.7375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Feeds</text>
+<text x="967.1999999999999" y="180.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[History &amp; status]</text>
+<text x="967.1999999999999" y="205.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Live polling, rejected</text>
+<text x="967.1999999999999" y="222.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">rows</text>
+<rect x="40" y="270" width="1040" height="150" rx="12" fill="#F2F6FC" stroke="#9DB7E6"/>
+<text x="58" y="296" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0F5BD8">Feature modules (hooks own the logic; screens stay presentational)</text>
+<rect x="58" y="310" width="240.5" height="96" rx="10" fill="#1D6FE8" stroke="#1D6FE8" stroke-width="0"/>
+<text x="178.25" y="334.73749999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">prices</text>
+<text x="178.25" y="350.86249999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[usePriceSearch · useUpdatePrice]</text>
+<text x="178.25" y="375.81249999999994" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Keyset paging, cache updates</text>
+<text x="178.25" y="392.31249999999994" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">after save</text>
+<rect x="312.5" y="310" width="240.5" height="96" rx="10" fill="#1D6FE8" stroke="#1D6FE8" stroke-width="0"/>
+<text x="432.75" y="334.73749999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">feeds</text>
+<text x="432.75" y="350.86249999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[useFeedUpload · csvPreview]</text>
+<text x="432.75" y="375.81249999999994" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">State machine: pick → check →</text>
+<text x="432.75" y="392.31249999999994" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">register → upload</text>
+<rect x="567" y="310" width="240.5" height="96" rx="10" fill="#1D6FE8" stroke="#1D6FE8" stroke-width="0"/>
+<text x="687.25" y="334.73749999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">auth</text>
+<text x="687.25" y="350.86249999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[SessionProvider]</text>
+<text x="687.25" y="375.81249999999994" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Token lifecycle, sign-out wipes</text>
+<text x="687.25" y="392.31249999999994" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">cache</text>
+<rect x="821.5" y="310" width="240.5" height="96" rx="10" fill="#1D6FE8" stroke="#1D6FE8" stroke-width="0"/>
+<text x="941.75" y="334.73749999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">ui</text>
+<text x="941.75" y="350.86249999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[Design system]</text>
+<text x="941.75" y="375.81249999999994" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Accessible components, theme,</text>
+<text x="941.75" y="392.31249999999994" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Intl formatting</text>
+<rect x="40" y="440" width="1040" height="150" rx="12" fill="#F2F6FC" stroke="#9DB7E6"/>
+<text x="58" y="466" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0F5BD8">Data &amp; state</text>
+<rect x="58" y="480" width="325.3333333333333" height="96" rx="10" fill="#0A7D74" stroke="#0A7D74" stroke-width="0"/>
+<text x="220.66666666666666" y="504.73749999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Server-state cache</text>
+<text x="220.66666666666666" y="520.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[TanStack Query]</text>
+<text x="220.66666666666666" y="545.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Retries with backoff (not 4xx), refetch on</text>
+<text x="220.66666666666666" y="562.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">focus, pause offline</text>
+<rect x="397.3333333333333" y="480" width="325.3333333333333" height="96" rx="10" fill="#0A7D74" stroke="#0A7D74" stroke-width="0"/>
+<text x="560" y="504.73749999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Offline persistence</text>
+<text x="560" y="520.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[AsyncStorage persister]</text>
+<text x="560" y="545.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">24 h cache of searches &amp; stores, keyed by</text>
+<text x="560" y="562.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">user</text>
+<rect x="736.6666666666666" y="480" width="325.3333333333333" height="96" rx="10" fill="#0A7D74" stroke="#0A7D74" stroke-width="0"/>
+<text x="899.3333333333333" y="504.73749999999995" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">API client</text>
+<text x="899.3333333333333" y="520.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[fetch + XHR]</text>
+<text x="899.3333333333333" y="545.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Bearer token, X-Request-Id, timeouts, RFC</text>
+<text x="899.3333333333333" y="562.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">9457 errors</text>
+<rect x="40" y="610" width="1040" height="150" rx="12" fill="#F2F6FC" stroke="#9DB7E6"/>
+<text x="58" y="636" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0F5BD8">Platform services (Expo modules, all in Expo Go)</text>
+<rect x="58" y="650" width="189.6" height="96" rx="10" fill="#6B7280" stroke="#6B7280" stroke-width="0"/>
+<text x="152.8" y="682.9875" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">expo-secure-store</text>
+<text x="152.8" y="699.1125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[Keychain / Keystore]</text>
+<text x="152.8" y="724.0625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Tokens, device-only</text>
+<rect x="261.6" y="650" width="189.6" height="96" rx="10" fill="#6B7280" stroke="#6B7280" stroke-width="0"/>
+<text x="356.40000000000003" y="674.7375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">expo-document-picker</text>
+<text x="356.40000000000003" y="690.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[+ expo-file-system]</text>
+<text x="356.40000000000003" y="715.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Read CSV from Files /</text>
+<text x="356.40000000000003" y="732.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Drive</text>
+<rect x="465.2" y="650" width="189.6" height="96" rx="10" fill="#6B7280" stroke="#6B7280" stroke-width="0"/>
+<text x="560" y="682.9875" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">expo-crypto</text>
+<text x="560" y="699.1125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[SHA-256]</text>
+<text x="560" y="724.0625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Idempotent uploads</text>
+<rect x="668.8" y="650" width="189.6" height="96" rx="10" fill="#6B7280" stroke="#6B7280" stroke-width="0"/>
+<text x="763.5999999999999" y="674.7375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">NetInfo</text>
+<text x="763.5999999999999" y="690.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[Connectivity]</text>
+<text x="763.5999999999999" y="715.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Offline banner, pause</text>
+<text x="763.5999999999999" y="732.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">writes</text>
+<rect x="872.4" y="650" width="189.6" height="96" rx="10" fill="#6B7280" stroke="#6B7280" stroke-width="0"/>
+<text x="967.1999999999999" y="674.7375" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Hermes Intl</text>
+<text x="967.1999999999999" y="690.8625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" font-style="italic" fill="rgba(255,255,255,0.82)" text-anchor="middle">[Locale formats]</text>
+<text x="967.1999999999999" y="715.8125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">Currency &amp; dates per</text>
+<text x="967.1999999999999" y="732.3125" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="rgba(255,255,255,0.82)" text-anchor="middle">store</text>
+<rect x="1110" y="100" width="270" height="660" rx="14" fill="#F2F6FC" stroke="#9DB7E6" stroke-width="1.5" stroke-dasharray="8 5"/>
+<text x="1126" y="126" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#0F5BD8">Cross-cutting concerns</text>
+<text x="1126" y="146" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" fill="#475467">apply to every layer</text>
+<rect x="1124" y="162" width="242" height="90" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1.6"/>
+<text x="1245" y="184.6175" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#101828" text-anchor="middle">Security</text>
+<text x="1245" y="209.4925" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">OWASP MASVS: no secrets in bundle,</text>
+<text x="1245" y="224.6725" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">secure storage, TLS only, cert</text>
+<text x="1245" y="239.85250000000002" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">pinning, root/jailbreak signals</text>
+<rect x="1124" y="260" width="242" height="90" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1.6"/>
+<text x="1245" y="290.2075" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#101828" text-anchor="middle">Accessibility</text>
+<text x="1245" y="315.0825" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">Roles, labels, 48 pt targets,</text>
+<text x="1245" y="330.2625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">Dynamic Type, contrast AA</text>
+<rect x="1124" y="358" width="242" height="90" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1.6"/>
+<text x="1245" y="380.6175" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#101828" text-anchor="middle">Resilience</text>
+<text x="1245" y="405.4925" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">Error states with retry, offline</text>
+<text x="1245" y="420.6725" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">reads, paused writes, idempotent</text>
+<text x="1245" y="435.8525" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">upload</text>
+<rect x="1124" y="456" width="242" height="90" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1.6"/>
+<text x="1245" y="486.2075" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#101828" text-anchor="middle">Observability</text>
+<text x="1245" y="511.0825" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">Sentry crashes &amp; traces;</text>
+<text x="1245" y="526.2624999999999" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">correlation id on every call</text>
+<rect x="1124" y="554" width="242" height="90" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1.6"/>
+<text x="1245" y="576.6175000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#101828" text-anchor="middle">Release</text>
+<text x="1245" y="601.4925000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">EAS Build profiles (dev / preview /</text>
+<text x="1245" y="616.6725" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">prod), EAS Update channels with</text>
+<text x="1245" y="631.8525000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">staged rollout</text>
+<rect x="1124" y="652" width="242" height="90" rx="10" fill="#FFFFFF" stroke="#DCE3EE" stroke-width="1.6"/>
+<text x="1245" y="682.2075000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#101828" text-anchor="middle">Quality</text>
+<text x="1245" y="707.0825000000001" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">TypeScript strict, Jest unit tests,</text>
+<text x="1245" y="722.2625" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#475467" text-anchor="middle">Maestro E2E flows in CI</text>
+<path d="M560,250 L560,270" fill="none" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M560,420 L560,440" fill="none" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<path d="M560,590 L560,610" fill="none" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="40" y="800" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13.5" fill="#475467">Dependencies point downwards only. Screens never call fetch directly; features never touch platform APIs except through small adapters, so each layer is unit-testable.</text>
+</svg>

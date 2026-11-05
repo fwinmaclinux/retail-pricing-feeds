@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1460" height="1005" viewBox="0 0 1460 1005">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475467"/></marker>
+  <marker id="arrowStart" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475467"/></marker>
+</defs>
+<rect width="1460" height="1005" fill="#FFFFFF"/>
+<text x="40" y="48" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#101828">Feed upload and ingestion</text>
+<text x="40" y="74" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#475467">File bytes never pass through the API tier; processing is asynchronous, idempotent and resumable</text>
+<rect x="25" y="110" width="170" height="50" rx="10" fill="#0B2A5B" stroke="#0B2A5B" stroke-width="0"/>
+<text x="110" y="139.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Store Manager</text>
+<line x1="110" y1="166" x2="110" y2="965" stroke="#C5CCD8" stroke-width="1.4" stroke-dasharray="5 5"/>
+<rect x="245" y="110" width="170" height="50" rx="10" fill="#0F5BD8" stroke="#0F5BD8" stroke-width="0"/>
+<text x="330" y="139.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Mobile app</text>
+<line x1="330" y1="166" x2="330" y2="965" stroke="#C5CCD8" stroke-width="1.4" stroke-dasharray="5 5"/>
+<rect x="515" y="110" width="170" height="50" rx="10" fill="#1D6FE8" stroke="#1D6FE8" stroke-width="0"/>
+<text x="600" y="139.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Pricing API</text>
+<line x1="600" y1="166" x2="600" y2="965" stroke="#C5CCD8" stroke-width="1.4" stroke-dasharray="5 5"/>
+<rect x="735" y="110" width="170" height="50" rx="10" fill="#0A7D74" stroke="#0A7D74" stroke-width="0"/>
+<text x="820" y="139.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">S3 raw feeds</text>
+<line x1="820" y1="166" x2="820" y2="965" stroke="#C5CCD8" stroke-width="1.4" stroke-dasharray="5 5"/>
+<rect x="915" y="110" width="170" height="50" rx="10" fill="#0A7D74" stroke="#0A7D74" stroke-width="0"/>
+<text x="1000" y="139.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">SQS queue</text>
+<line x1="1000" y1="166" x2="1000" y2="965" stroke="#C5CCD8" stroke-width="1.4" stroke-dasharray="5 5"/>
+<rect x="1095" y="110" width="170" height="50" rx="10" fill="#1D6FE8" stroke="#1D6FE8" stroke-width="0"/>
+<text x="1180" y="139.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Ingestion worker</text>
+<line x1="1180" y1="166" x2="1180" y2="965" stroke="#C5CCD8" stroke-width="1.4" stroke-dasharray="5 5"/>
+<rect x="1275" y="110" width="170" height="50" rx="10" fill="#0A7D74" stroke="#0A7D74" stroke-width="0"/>
+<text x="1360" y="139.55" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Aurora PostgreSQL</text>
+<line x1="1360" y1="166" x2="1360" y2="965" stroke="#C5CCD8" stroke-width="1.4" stroke-dasharray="5 5"/>
+<line x1="110" y1="205" x2="326" y2="205" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="220" y="197" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">1. Choose CSV (Files / Drive)</text>
+<rect x="205" y="231" width="250" height="44" rx="6" fill="#FFF8E6" stroke="#E9C46A"/>
+<text x="330" y="249" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#101828" text-anchor="middle">Check header + first 2,000 rows on</text>
+<text x="330" y="265.25" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#101828" text-anchor="middle">device; compute SHA-256</text>
+<line x1="330" y1="305" x2="596" y2="305" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="465" y="297" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">2. POST /feeds {fileName, size, sha256}</text>
+<rect x="475" y="327" width="250" height="44" rx="6" fill="#FFF8E6" stroke="#E9C46A"/>
+<text x="600" y="345" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#101828" text-anchor="middle">Same file already loaded by this</text>
+<text x="600" y="361.25" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#101828" text-anchor="middle">user? Return it, do not re-apply</text>
+<line x1="600" y1="395" x2="334" y2="395" stroke="#475467" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<text x="465" y="387" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">3. 201 {feedId, pre-signed PUT URL}</text>
+<line x1="330" y1="441" x2="816" y2="441" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="575" y="433" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">4. PUT file bytes (background, resumable)</text>
+<line x1="820" y1="487" x2="996" y2="487" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="910" y="479" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">5. ObjectCreated</text>
+<line x1="1000" y1="533" x2="1176" y2="533" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1090" y="525" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">6. deliver {feedId}</text>
+<line x1="1180" y1="579" x2="1356" y2="579" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1270" y="571" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">7. claim: QUEUED → PROCESSING</text>
+<line x1="1180" y1="625" x2="824" y2="625" stroke="#475467" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<text x="1000" y="617" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">8. stream file (constant memory)</text>
+<rect x="1080" y="645" width="368" height="104" rx="8" fill="none" stroke="#9DB7E6" stroke-width="1.5"/>
+<rect x="1080" y="645" width="200" height="22" rx="6" fill="#F2F6FC" stroke="#9DB7E6"/>
+<text x="1089" y="660" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#0F5BD8">loop: every 500 valid rows</text>
+<rect x="1075" y="673" width="210" height="44" rx="6" fill="#FFF8E6" stroke="#E9C46A"/>
+<text x="1180" y="691" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#101828" text-anchor="middle">validate rows; collect rejects</text>
+<text x="1180" y="707.25" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#101828" text-anchor="middle">with reasons</text>
+<line x1="1180" y1="739" x2="1356" y2="739" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1270" y="731" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">9. upsert + audit + outbox (1 txn)</text>
+<line x1="1180" y1="797" x2="1356" y2="797" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="1270" y="789" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">10. status COMPLETED / WITH_ERRORS</text>
+<line x1="1180" y1="843" x2="334" y2="843" stroke="#475467" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<text x="755" y="835" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">11. push 'feed processed' (SNS → APNs / FCM)</text>
+<line x1="330" y1="889" x2="596" y2="889" stroke="#475467" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text x="465" y="881" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">12. GET /feeds/{id}, /errors</text>
+<line x1="330" y1="935" x2="114" y2="935" stroke="#475467" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+<text x="220" y="927" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#101828" text-anchor="middle">13. Summary + rejected rows</text>
+</svg>
