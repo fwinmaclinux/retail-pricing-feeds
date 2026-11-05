@@ -16,3 +16,6 @@ mobile/android/
 *.key
 *.mobileprovision
 .env*.local
+
+# Office lock files
+~$*
